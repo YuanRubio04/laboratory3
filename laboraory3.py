@@ -1,4 +1,4 @@
-def check_loan_eligibility():
+def rubiolab3_loan_eligibility():
     salary = float(input("Enter your monthly salary: "))
     loan_amount = float(input("Enter the loan amount you want to request: "))
 
@@ -6,7 +6,7 @@ def check_loan_eligibility():
         max_loan_amount = salary * 10
         if loan_amount <= max_loan_amount:
             print("You are eligible for the loan.")
-            months_to_pay = int(input("How many months do you want to pay the loan? "))
+            months_to_pay = int(input("How many months do you want to pay the requested loan? "))
             interest = loan_amount * 0.10
             total_amount = loan_amount + interest
             print(f"Total amount to be paid: {total_amount:.2f}")
@@ -16,4 +16,4 @@ def check_loan_eligibility():
     else:
         print("Salary is too low. You need a monthly salary of at least 30,000.00.")
 
-check_loan_eligibility()
+rubiolab3_loan_eligibility()
